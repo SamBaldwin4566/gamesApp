@@ -1,0 +1,200 @@
+/* Styles for the main body */
+body {
+  background-color:white
+}
+
+
+
+/* Styles for heading component */
+
+#heading {
+  text-align: center;
+  color:white;
+  background-color:black;
+  border-bottom: khaki solid 10px;
+  margin-top: -30px;
+  padding-top:30px;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+.homeLink {
+  color: white;
+  margin-right:auto;
+  margin-left:auto;
+  text-decoration: none;
+  font-size:10px;
+
+}
+
+
+
+/* Styles for landing button component */
+
+.gameButton {
+  margin-top: 30px;
+  margin-left: 14%;
+  margin-right: 14%;
+  border-bottom: none;
+  padding-top:250px;
+  
+  
+  
+}
+
+.gameImage {
+  margin-top: 100px;
+  border: burlywood groove 8px;
+  width: 250px;
+  height:250px;
+  padding:10px;
+  
+}
+
+.startGame {
+  color: white;
+  background-color: black;
+  margin-left: 28%;
+  margin-top: 50%;
+  border: burlywood groove 8px;
+  text-decoration: none;
+}
+
+
+
+/* Styles for game component */
+
+#image {
+  border: burlywood groove 20px;
+  padding: 10px;
+  background-color: white;
+  width:15%;
+  float: right;
+  margin-right: 10vw;
+  margin-top:5vh;
+}
+
+#displayWord {
+  margin-top:15vh;
+  margin-left:15vh;
+  max-width: 10px
+}
+
+table {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+
+button {
+  margin:5px;
+  width: 3vw;
+  height:5vh;
+  background-color:khaki;
+  border-radius: 10px;
+
+}
+
+#generate {
+  width: 10%;
+  margin-left: 30%;
+  margin-top:15vh;
+}
+
+
+
+
+/* Styles for the help page */
+
+#help {
+  width:50%;
+  margin:auto;
+  padding:20px;
+  margin-top:10vh;
+  margin-bottom: 10vh;
+  border: burlywood groove 20px;
+  background-color: black;
+  color: white;
+}
+
+#help > h3 {
+  font-size: 50px;
+  text-align:center;
+  margin-bottom: 10vh;
+  margin-top:0;
+  
+}
+
+
+
+/* Styles for dynamic style changes */
+
+.hidden{
+  display: none
+}
+
+.buttonHide {
+  display: none
+}
+
+a {
+  padding: 10px;
+  border-bottom: 3px solid black;
+  margin-left: 25px;
+  
+}
+
+.hideLetter {
+  color: white
+}
+
+.clickedButton {
+  text-align: center;
+  margin:5px;
+  width: 3vw;
+  height:5vh;
+}
+
+.TicTacToe {
+  margin-bottom: 20px;
+}
+
+.tableXO {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  font-size: 50px;
+  text-align: center;
+}
+
+.row1 {
+  border-bottom: 5px black solid;
+  padding: 50px;
+}
+.row2 {
+  border-bottom: 5px black solid;
+  padding: 50px;
+}
+.row3 {
+  padding: 50px;
+}
+.column1 {
+  border-right: 5px black solid;
+  padding: 50px;
+}
+.column2 {
+  border-right: 5px black solid;
+  padding: 50px;
+}
+.column3 {
+  padding: 50px;
+}
+
+.buttonXO {
+  width: 50px;
+  height: 50px;
+}
+.hiddenXO {
+  display: none;
+}
