@@ -10,11 +10,11 @@ function Section() {
     let handleClick = (e) => {
         console.log(count)
         if (count%2 === 0){
-            e.target.nextSibling.className = ""
+            e.target.nextSibling.className = "reveal"
             e.target.className = "hidden"
         }
         else {
-            e.target.nextSibling.nextSibling.className = ""
+            e.target.nextSibling.nextSibling.className = "reveal"
             e.target.className = "hidden"
         }
         dispatch(increment())

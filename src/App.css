@@ -16,6 +16,7 @@ body {
   padding-top:30px;
   padding-bottom: 15px;
   font-size: 20px;
+  width:100%
 }
 
 .homeLink {
@@ -44,7 +45,8 @@ body {
 
 .gameImage {
   margin-top: 100px;
-  border: burlywood groove 8px;
+  border: burlywood outset 8px;
+  border-radius: 40px;
   width: 250px;
   height:250px;
   padding:10px;
@@ -54,18 +56,25 @@ body {
 .startGame {
   color: white;
   background-color: black;
-  margin-left: 28%;
-  margin-top: 50%;
-  border: burlywood groove 8px;
+  /* margin-left: 28%; */
+  /* margin-top: 50%; */
+  border: burlywood solid 5px;
+  border-radius: 40px;
   text-decoration: none;
+  position:fixed;
+  top:180px;
+
 }
 
 
 
 /* Styles for game component */
 
+
+
 #image {
-  border: burlywood groove 20px;
+  border: burlywood outset 8px;
+  border-radius: 40px;
   padding: 10px;
   background-color: white;
   width:15%;
@@ -89,7 +98,7 @@ table {
 
 button {
   margin:5px;
-  width: 3vw;
+  width: 40px;
   height:5vh;
   background-color:khaki;
   border-radius: 10px;
@@ -97,7 +106,7 @@ button {
 }
 
 #generate {
-  width: 10%;
+  width: 90px;
   margin-left: 30%;
   margin-top:15vh;
 }
@@ -166,35 +175,46 @@ a {
   border-collapse: collapse;
   font-size: 50px;
   text-align: center;
+  width:380px;
 }
 
 .row1 {
   border-bottom: 5px black solid;
-  padding: 50px;
+  /* padding: 50px; */
+  width:250px;
 }
 .row2 {
   border-bottom: 5px black solid;
-  padding: 50px;
+  /* padding: 50px; */
 }
 .row3 {
-  padding: 50px;
+  /* padding: 50px; */
 }
 .column1 {
   border-right: 5px black solid;
-  padding: 50px;
+  width:100px;
+  height:150px;
 }
 .column2 {
   border-right: 5px black solid;
-  padding: 50px;
+  width:100px;
+  height:150px;
 }
 .column3 {
-  padding: 50px;
+  width:100px;
+  height:150px;
 }
 
 .buttonXO {
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
+  border: none;
+  background:white;
+  
 }
 .hiddenXO {
   display: none;
+}
+.reveal {
+  padding:50px
 }
