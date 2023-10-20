@@ -1,6 +1,7 @@
 /* Styles for the main body */
 body {
-  background-color:white
+  background-color:white;
+  font-family: 'Playpen Sans', cursive;
 }
 
 
@@ -16,7 +17,8 @@ body {
   padding-top:30px;
   padding-bottom: 15px;
   font-size: 20px;
-  width:100%
+  width:100%;
+  font-family: 'Playpen Sans', cursive;
 }
 
 .homeLink {
