@@ -21,6 +21,8 @@ body {
   font-family: 'Playpen Sans', cursive;
 }
 
+
+
 .homeLink {
   color: white;
   margin-right:auto;
@@ -29,7 +31,15 @@ body {
   font-size:10px;
 
 }
-
+@media only screen and (max-width: 600px) {
+  #heading {
+    padding-top:10px;
+    padding-bottom: 0px;
+  }
+  .homeLink {
+    font-size: 10px;
+  }
+}
 
 
 /* Styles for landing button component */
@@ -63,8 +73,9 @@ body {
   border: burlywood solid 5px;
   border-radius: 40px;
   text-decoration: none;
-  position:fixed;
-  top:180px;
+  position:absolute;
+  top:80px;
+  padding: 5px;
 
 }
 
@@ -72,48 +83,105 @@ body {
 
 /* Styles for game component */
 
-
+#hangmanMainPage {
+  display: flex;
+  width: 80%;
+  
+  margin: auto;
+  justify-content: space-around;
+  margin-top: 10px
+}
 
 #image {
   border: burlywood outset 8px;
   border-radius: 40px;
   padding: 10px;
   background-color: white;
-  width:15%;
-  float: right;
+  width:20%;
+  
+  /* float: right;
   margin-right: 10vw;
-  margin-top:5vh;
+  margin-top:5vh; */
 }
 
 #displayWord {
-  margin-top:15vh;
-  margin-left:15vh;
-  max-width: 10px
+  display:flex;
+  padding-top: 50px;
+  margin:auto;
+  width: 90%;
+  /* border: black solid 2px */
+}
+
+#displayWord > a {
+  width: 30px;
+  border-bottom: 3px solid black;
+  margin-left: 15px;
+  
+}
+#keypad {
+  
 }
 
 table {
-  width: 30%;
-  margin-left: auto;
+  
+  
   margin-right: auto;
-  margin-top: 5vh;
+  margin-top: 20px;
 }
 
 button {
   margin:5px;
-  width: 40px;
+  width:50px;
   height:5vh;
   background-color:khaki;
   border-radius: 10px;
+  font-size: 12px
 
 }
 
 #generate {
-  width: 90px;
-  margin-left: 30%;
-  margin-top:15vh;
+  padding:10px;
+  
+  width: auto;
+  margin-top:40px;
 }
 
+@media only screen and (max-width: 600px) {
+  #hangmanMainPage {
+    display: inline;
+    margin-bottom: 50px;
+  }
+  #image {
+    margin-top: 10px;
+    margin-left: 30%;
+    width: 30%;
+  }
+  #keypad {
+    width:90%;
+    margin:auto;
+  }
+  #generate {
+    margin-left: 10px;
+  }
+  table {
+    margin-left: 10px;
+  }
+  button {
+    width: 30px
+  }
+  #displayWord {
+    
+    padding-top: 20px;
+    
+  }
 
+  #displayWord > a {
+    width: 10px;
+    border-bottom: 3px solid black;
+    margin-left: 8px;
+    
+  }
+}
 
 
 /* Styles for the help page */
@@ -149,12 +217,7 @@ button {
   display: none
 }
 
-a {
-  padding: 10px;
-  border-bottom: 3px solid black;
-  margin-left: 25px;
-  
-}
+
 
 .hideLetter {
   color: white
@@ -166,6 +229,11 @@ a {
   width: 3vw;
   height:5vh;
 }
+
+
+
+
+
 
 .TicTacToe {
   margin-bottom: 20px;

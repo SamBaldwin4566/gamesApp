@@ -142,14 +142,22 @@ function Game() {
 
 
   // Create array of alphabet
-  let alphabet1 = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]
-  let alphabet2 = ["N", "O", "P", "Q", "R", "S", "T","U", "V", "W", "X", "Y", "Z"]
+  let alphabet1 = ["A", "B", "C", "D", "E", "F", "G"]
+  let alphabet2 = ["H", "I", "J", "K", "L", "M", "N"]
+  let alphabet3 = ["O", "P", "Q", "R", "S", "T", "U"]
+  let alphabet4 = ["V", "w", "X", "Y", "Z"]
 
   // Map through both arrays to display them using the Letters component
   let alpha1 = alphabet1.map((item, index) => (
     <td key={item + index}><Letters letter={item} click={letterClick}/></td>
   ))
   let alpha2 = alphabet2.map((item,index) => (
+    <td key={item + index}><Letters letter={item} click={letterClick}/></td>
+  ))
+  let alpha3 = alphabet3.map((item, index) => (
+    <td key={item + index}><Letters letter={item} click={letterClick}/></td>
+  ))
+  let alpha4 = alphabet4.map((item,index) => (
     <td key={item + index}><Letters letter={item} click={letterClick}/></td>
   ))
 
@@ -160,28 +168,37 @@ function Game() {
     <div className="Game">
       <Link to="/hangmanHelp" class="startGame">Help</Link>
       
-      <img id="image" src={hangmanImage.image} alt="Hangman"/>
+      <div id="hangmanMainPage">
+        
+        <img id="image" src={hangmanImage.image} alt="Hangman"/>
+        <div id="keypad">
+          <button id="generate" onClick={generateWord}>Start</button>
 
 
-      <button id="generate" onClick={generateWord}>Start</button>
 
+          <table>
+            <tbody>
+              <tr>
+                {alpha1}
+              </tr>
+              <tr>
+                {alpha2}
+              </tr>
+              <tr>
+                {alpha3}
+              </tr>
+              <tr>
+                {alpha4}
+              </tr>
+            </tbody>
+          </table>
 
-
-      <table>
-        <tbody>
-          <tr>
-            {alpha1}
-          </tr>
-          <tr>
-            {alpha2}
-          </tr>
-        </tbody>
-      </table>
-
-      <div id="displayWord">
+          
+        </div>
+        
         
       </div>
-      
+      <div id="displayWord"></div>
 
     </div>
   );
