@@ -142,7 +142,7 @@ function Game() {
 
 
   // Create array of alphabet
-  let alphabet1 = ["A", "B", "C", "D", "E", "F", "G"]
+  let alphabet1 = ["A", "B", "C", "D", "E", "F", "G","H", "I", "J", "K", "L", "M", "N","O", "P", "Q", "R", "S", "T", "U","V", "w", "X", "Y", "Z"]
   let alphabet2 = ["H", "I", "J", "K", "L", "M", "N"]
   let alphabet3 = ["O", "P", "Q", "R", "S", "T", "U"]
   let alphabet4 = ["V", "w", "X", "Y", "Z"]
@@ -151,15 +151,15 @@ function Game() {
   let alpha1 = alphabet1.map((item, index) => (
     <td key={item + index}><Letters letter={item} click={letterClick}/></td>
   ))
-  let alpha2 = alphabet2.map((item,index) => (
-    <td key={item + index}><Letters letter={item} click={letterClick}/></td>
-  ))
-  let alpha3 = alphabet3.map((item, index) => (
-    <td key={item + index}><Letters letter={item} click={letterClick}/></td>
-  ))
-  let alpha4 = alphabet4.map((item,index) => (
-    <td key={item + index}><Letters letter={item} click={letterClick}/></td>
-  ))
+  // let alpha2 = alphabet2.map((item,index) => (
+  //   <td key={item + index}><Letters letter={item} click={letterClick}/></td>
+  // ))
+  // let alpha3 = alphabet3.map((item, index) => (
+  //   <td key={item + index}><Letters letter={item} click={letterClick}/></td>
+  // ))
+  // let alpha4 = alphabet4.map((item,index) => (
+  //   <td key={item + index}><Letters letter={item} click={letterClick}/></td>
+  // ))
 
 
   // Return the component display
@@ -170,13 +170,24 @@ function Game() {
       
       <div id="hangmanMainPage">
         
-        <img id="image" src={hangmanImage.image} alt="Hangman"/>
+        <div id="word">
+          <div id="image">
+            <img id="hangmanImage" src={hangmanImage.image} alt="Hangman"/>
+          </div>
+          
+          <div id="displayWord"></div>
+        </div>
+        
+
         <div id="keypad">
+          
           <button id="generate" onClick={generateWord}>Start</button>
 
+          <div className="letters">
+            {alpha1}
+          </div>
 
-
-          <table>
+          {/* <table>
             <tbody>
               <tr>
                 {alpha1}
@@ -191,14 +202,13 @@ function Game() {
                 {alpha4}
               </tr>
             </tbody>
-          </table>
+          </table> */}
 
           
         </div>
         
         
       </div>
-      <div id="displayWord"></div>
 
     </div>
   );

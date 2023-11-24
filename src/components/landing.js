@@ -8,9 +8,9 @@ function Landing() {
    
 
     return(
-        <div>
+        <div className="games">
             <Link to="/hangman" className="gameButton"><img src={hangmanButton} className="gameImage" alt="Hangman"></img></Link>
-            <Link to="/tictactoe" className="gameButton"><img src={tictactoeButton} className="gameImage" alt="Tic Tac Toe"></img></Link>
+            {/* <Link to="/tictactoe" className="gameButton"><img src={tictactoeButton} className="gameImage" alt="Tic Tac Toe"></img></Link> */}
         </div>
         )
 }

@@ -44,19 +44,18 @@ body {
 
 /* Styles for landing button component */
 
+.games {
+  margin:auto;
+  display:flex;
+  width:50%;
+  margin-top:100px;
+  justify-content: space-around;
+}
 .gameButton {
-  margin-top: 30px;
-  margin-left: 14%;
-  margin-right: 14%;
   border-bottom: none;
-  padding-top:250px;
-  
-  
-  
 }
 
 .gameImage {
-  margin-top: 100px;
   border: burlywood outset 8px;
   border-radius: 40px;
   width: 250px;
@@ -86,10 +85,13 @@ body {
 #hangmanMainPage {
   display: flex;
   width: 80%;
-  
   margin: auto;
   justify-content: space-around;
-  margin-top: 10px
+  margin-top: 50px
+}
+
+#word {
+  width:50%;
 }
 
 #image {
@@ -97,11 +99,11 @@ body {
   border-radius: 40px;
   padding: 10px;
   background-color: white;
-  width:20%;
-  
-  /* float: right;
-  margin-right: 10vw;
-  margin-top:5vh; */
+  width:200px;
+  margin:auto;
+}
+#hangmanImage {
+  object-fit: contain;
 }
 
 #displayWord {
@@ -109,25 +111,36 @@ body {
   padding-top: 50px;
   margin:auto;
   width: 90%;
-  /* border: black solid 2px */
+  justify-content: center;
 }
-
 #displayWord > a {
   width: 30px;
   border-bottom: 3px solid black;
   margin-left: 15px;
   
 }
+
+
+
+
 #keypad {
-  
+  width:50%;
 }
 
-table {
-  
-  
-  margin-right: auto;
-  margin-top: 20px;
+#generate {
+  padding:10px;
+  width: auto;
+  margin-top:40px;
+  margin-left:10px;
 }
+
+.letters {
+  margin-top:50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left:10px;
+}
+
 
 button {
   margin:5px;
@@ -139,23 +152,22 @@ button {
 
 }
 
-#generate {
-  padding:10px;
-  
-  width: auto;
-  margin-top:40px;
-}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 900px) {
   #hangmanMainPage {
     display: inline;
+    margin-top:20px;
     margin-bottom: 50px;
+    justify-content: center;
   }
-  #image {
-    margin-top: 10px;
-    margin-left: 30%;
-    width: 30%;
+  #word {
+    width: 90%;
+    margin:auto;
+    margin-top:20px;
   }
+
+ 
   #keypad {
     width:90%;
     margin:auto;
@@ -167,7 +179,8 @@ button {
     margin-left: 10px;
   }
   button {
-    width: 30px
+    width: 30px;
+    height: 35px;
   }
   #displayWord {
     
